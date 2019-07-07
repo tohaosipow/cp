@@ -11,6 +11,7 @@
 |
 */
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,7 +26,7 @@ Route::get('/test', function () {
     echo json_encode(\App\Application::find(1));
 });
 
-Route::get('/makeapp', function ($request) {
+Route::get('/makeapp', function (Request $request) {
     $data = (object) $request->all();
     $as = new \App\Services\ApplicationService();
     $as->createApplication(\App\Category::where('name', $data->category)->first()->id, $data->text, $data->phone, $data->lat, $data->lon, $data->record_url, $data->id);
