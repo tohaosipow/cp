@@ -29,7 +29,7 @@ Route::get('/test', function () {
 Route::get('/makeapp', function (Request $request) {
     $data = (object) $request->all();
     $as = new \App\Services\ApplicationService();
-    //$as->createApplication(\App\Category::where('name', $data->category)->first()->id, $data->text, $data->phone, $data->lat, $data->lon, $data->record_url, $data->id);
+    $as->createApplication(\App\Category::where('name', $data->category)->first()->id, $data->text, $data->phone, $data->lat, $data->lon, $data->record_url, $data->id);
 });
 
 
