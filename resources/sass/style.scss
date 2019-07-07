@@ -1,0 +1,324 @@
+$main_color: #294c64;
+$accent_color: #fefefe;
+.left-menu{
+  width: 260px;
+  height: 100vh;
+  background-color: $main_color;
+  display: inline-block;
+  float: left;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+.profile{
+  background: $accent_color;
+  width: 100%;
+  height: 100px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.11);
+  -moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.11);
+  box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.11);
+  border-bottom: 2px solid $main_color;
+}
+.bbb{
+  border-bottom: 2px solid $main_color !important;
+}
+ul.menu{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+ul.menu > li > a{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 1em 1em;
+  background: darken($main_color, 5%);
+  margin-bottom: 0.1em;
+  color: darken($accent_color, 5%);
+
+}
+ul.menu > li > a:hover{
+  text-decoration: none;
+  background: darken($main_color, 8%);
+}
+
+.user-icon{
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+.profile{
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.user-icon img{
+  width: 200%;
+}
+
+.user-name{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: $main_color;
+}
+
+.role{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.menu ion-icon{
+  font-size: 1.7em;
+  margin-right: 0.7em;
+}
+
+.content{
+  display: inline-block;
+  width: calc(100% - 260px);
+}
+
+.page-header{
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background: $accent_color;
+  color: darken($main_color, 20%);
+  font-size: 20px;
+  border-bottom: 2px solid $main_color;
+
+}
+
+.page-header ion-icon{
+  font-size: 2em;
+  color: $main_color;
+  margin-right: 0.5em;
+}
+
+span.describe{
+  display: block;
+  color: darken($accent_color, 55%);
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+input.input{
+  padding: 10px;
+  background: white;
+  display: block;
+  min-width: 500px;
+}
+
+.main-part{
+  padding: 10px;
+  min-height: calc(100vh - 100px);
+}
+
+.card{
+  border: none;
+}
+
+.plate{
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.11);
+  -moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.11);
+  box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.11);
+}
+.plate-number{
+  color: $main_color;
+}
+
+.plate-counter{
+    font-family: "Open Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.plate-ed{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.tt{
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: $main_color;
+}
+
+.editable{
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.25);
+  margin-bottom: 10px;
+}
+.editable:focus {
+  outline: none;
+  border-bottom:  2px solid $main_color;
+}
+
+.person-name label{
+  margin: 0 !important;
+  color: darken($accent_color, 50%);
+  padding: 0 10px;
+  font-size: 11px;
+}
+
+.author-and-date{
+  justify-content: left;
+  display: flex;
+  padding: 10px;
+  margin-top: 15px;
+
+}
+
+.author-and-date .author{
+  margin-right: 2em;
+  font-weight: 700;
+}
+
+.author-and-date .date{
+  color: darken($accent_color, 50%);
+}
+.card-body .text{
+  padding: 5px 20px;
+}
+
+
+.category{
+  position: absolute;
+  background: $main_color;
+  color: white;
+  top: 0;
+  padding: 0.5em 1em;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.button-answer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  padding: 10px;
+  border: 1px solid #f3f3f3;
+  background: #f3f3f3;
+
+
+}
+.button-answer ion-icon{
+  font-size: 1.5em;
+  margin-right: 0.5em;
+
+}
+.button-answer:hover ion-icon{
+  color: rgba(255,69,1,0.8);
+}
+
+.button-answer:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.button-answer:focus{
+  outline: none;
+}
+
+.question{
+  background-image: url("https://www.publicdomainpictures.net/pictures/90000/velka/question-marks-background.jpg");
+  background-color: rgba(255, 255, 255, 0.99);
+  background-blend-mode: overlay;
+  border: 1px solid #fefefe;
+}
+
+.highlighth{
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.h-green{
+  background: $green;
+  color: white;
+}
+
+.vertical-pipeline .line-item{
+  border: 1px solid black;
+  padding: 10px 5px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.line-item:after{
+  content: '';
+  height: 39px;
+  width: 1px;
+  position: absolute;
+  border-right: 1px dashed black;
+  bottom: -39px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.line-item:last-child{
+  background: #52748f;
+  color: white;
+}
+
+.line-item:last-child:after{
+  display: none;
+}
+
+.line-item >  .date{
+  display: block;
+  font-size: 10px;
+}
+
+.a-btn{
+  color: rgba(223,223,223,0.91);
+  font-size: 20px;
+}
+
+
+.card{
+  box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.11) !important;
+}
+
+.out-table th{
+   background: rgba(255,255,255,0.91);
+  padding: 20px;
+}
+
+
+.out-table td{
+  vertical-align: middle;
+}
+.out-table{
+  margin-bottom: 0 !important;
+}
+
+#map{
+  position: relative;
+}
+
